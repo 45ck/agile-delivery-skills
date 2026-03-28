@@ -90,8 +90,8 @@ LICENSE                              MIT
 
 ## Related workflow agents
 
-- [delivery-manager](https://github.com/45ck/workflow-agents) - Own backlog shaping, sprint goals, and blocker handling
-- [delivery-manager-beads](https://github.com/45ck/workflow-agents) - Track blockers and delivery actions as Beads items
+- [delivery-manager](https://github.com/45ck/skill-harness) - Own backlog shaping, sprint goals, and blocker handling
+- [delivery-manager-beads](https://github.com/45ck/skill-harness) - Track blockers and delivery actions as Beads items
 
 ## Related skill packs
 
