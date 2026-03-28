@@ -1,0 +1,143 @@
+{
+  "name": "agile-delivery-pack",
+  "version": "0.1.0",
+  "type": "skill-pack",
+  "summary": "Agile delivery and iteration-discipline pack for Claude Code-style workflows.",
+  "recommended_order": [
+    "backlog-groomer",
+    "story-splitting-advisor",
+    "sprint-goal-writer",
+    "acceptance-driven-planner",
+    "definition-of-done-enforcer",
+    "regression-discipline-checker",
+    "cross-functional-team-checker",
+    "self-organization-health-check",
+    "blocker-escalation-advisor",
+    "iteration-outcome-reviewer",
+    "retrospective-pattern-finder"
+  ],
+  "skills": [
+    {
+      "id": "sprint-goal-writer",
+      "path": "skills/sprint-goal-writer/SKILL.md",
+      "purpose": "Write focused sprint goals that align backlog items to a coherent outcome instead of a random collection of tasks.",
+      "handoffs": [
+        "story-splitting-advisor",
+        "backlog-groomer",
+        "acceptance-driven-planner"
+      ]
+    },
+    {
+      "id": "story-splitting-advisor",
+      "path": "skills/story-splitting-advisor/SKILL.md",
+      "purpose": "Split large stories into smaller, delivery-ready slices while preserving user value, testability, and sequencing logic.",
+      "handoffs": [
+        "backlog-groomer",
+        "acceptance-driven-planner",
+        "sprint-goal-writer"
+      ]
+    },
+    {
+      "id": "backlog-groomer",
+      "path": "skills/backlog-groomer/SKILL.md",
+      "purpose": "Review and refine backlog items for clarity, readiness, priority, sequencing, and hidden ambiguity before sprint commitment.",
+      "handoffs": [
+        "story-splitting-advisor",
+        "acceptance-driven-planner",
+        "sprint-goal-writer"
+      ]
+    },
+    {
+      "id": "acceptance-driven-planner",
+      "path": "skills/acceptance-driven-planner/SKILL.md",
+      "purpose": "Turn backlog items into acceptance-led implementation plans that anchor development and testing around observable outcomes.",
+      "handoffs": [
+        "definition-of-done-enforcer",
+        "regression-discipline-checker",
+        "iteration-outcome-reviewer"
+      ]
+    },
+    {
+      "id": "iteration-outcome-reviewer",
+      "path": "skills/iteration-outcome-reviewer/SKILL.md",
+      "purpose": "Assess what an iteration actually delivered against its goal, commitments, quality expectations, and unresolved spillover.",
+      "handoffs": [
+        "retrospective-pattern-finder",
+        "blocker-escalation-advisor",
+        "backlog-groomer"
+      ]
+    },
+    {
+      "id": "regression-discipline-checker",
+      "path": "skills/regression-discipline-checker/SKILL.md",
+      "purpose": "Check whether the team is preserving quality while iterating quickly, especially around repeated breakage and weak regression protection.",
+      "handoffs": [
+        "definition-of-done-enforcer",
+        "iteration-outcome-reviewer",
+        "retrospective-pattern-finder"
+      ]
+    },
+    {
+      "id": "definition-of-done-enforcer",
+      "path": "skills/definition-of-done-enforcer/SKILL.md",
+      "purpose": "Evaluate whether backlog items or sprint outputs meet an explicit, requirement-aware definition of done.",
+      "handoffs": [
+        "iteration-outcome-reviewer",
+        "regression-discipline-checker",
+        "blocker-escalation-advisor"
+      ]
+    },
+    {
+      "id": "cross-functional-team-checker",
+      "path": "skills/cross-functional-team-checker/SKILL.md",
+      "purpose": "Review whether a team can actually deliver end-to-end value within an iteration or is bottlenecked by missing roles, approvals, or capabilities.",
+      "handoffs": [
+        "self-organization-health-check",
+        "blocker-escalation-advisor",
+        "backlog-groomer"
+      ]
+    },
+    {
+      "id": "self-organization-health-check",
+      "path": "skills/self-organization-health-check/SKILL.md",
+      "purpose": "Assess whether the team is self-organizing effectively or is stalled by hidden control, poor clarity, overload, or coordination failure.",
+      "handoffs": [
+        "retrospective-pattern-finder",
+        "cross-functional-team-checker",
+        "blocker-escalation-advisor"
+      ]
+    },
+    {
+      "id": "blocker-escalation-advisor",
+      "path": "skills/blocker-escalation-advisor/SKILL.md",
+      "purpose": "Classify blockers and recommend the least-wasteful escalation path so the team does not silently absorb preventable delay.",
+      "handoffs": [
+        "iteration-outcome-reviewer",
+        "retrospective-pattern-finder",
+        "cross-functional-team-checker"
+      ]
+    },
+    {
+      "id": "retrospective-pattern-finder",
+      "path": "skills/retrospective-pattern-finder/SKILL.md",
+      "purpose": "Find recurring patterns across retrospectives, incidents, and sprint outcomes so improvement work targets causes instead of symptoms.",
+      "handoffs": [
+        "self-organization-health-check",
+        "regression-discipline-checker",
+        "backlog-groomer"
+      ]
+    }
+  ],
+  "templates": [
+    "templates/sprint-goal-template.md",
+    "templates/story-splitting-template.md",
+    "templates/backlog-grooming-template.md",
+    "templates/acceptance-led-delivery-template.md",
+    "templates/definition-of-done-checklist-template.md",
+    "templates/iteration-review-template.md",
+    "templates/regression-discipline-template.md",
+    "templates/team-health-check-template.md",
+    "templates/blocker-escalation-template.md",
+    "templates/retrospective-patterns-template.md"
+  ]
+}
